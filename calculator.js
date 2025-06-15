@@ -20,14 +20,14 @@ function multiply(number1, number2) {
 }
 
 function divide(number1, number2) {
-  return number1 + number2;
+  return number1 / number2;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
   addEl.addEventListener("click", () => performOperation(add));
   subtractEl.addEventListener("click", () => performOperation(substract));
-multiplyEl.addEventListener("click", () => performOperation(add));
-divideEl.addEventListener("click", () => performOperation(add));
+  multiplyEl.addEventListener("click", () => performOperation(multiply));
+  divideEl.addEventListener("click", () => performOperation(divide));
 });
 
 const performOperation = (func) => {
